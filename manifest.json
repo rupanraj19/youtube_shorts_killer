@@ -1,0 +1,16 @@
+{
+
+    "name": "Remove YouTube Shorts",
+    "version": "1.0",
+    "description": "Removes YouTube Shorts section from the website.",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["background.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "manifest_version": 2
+  }
